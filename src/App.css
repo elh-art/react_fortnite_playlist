@@ -1,6 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Sedgwick+Ave+Display&display=swap');;
+
+:root {
+  --color-white: #ffffff;
+  --color-green: #319236;
+  --color-blue: #4c51f7;
+  --color-midblue: #26b4e6;
+  --color-darkblue: #000074;
+  --color-purple: #9d4dbb;
+  --color-yellow: #f3af19;
+  --color-grey: #adadad;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, var(--color-blue), var(--color-midblue), var(--color-darkblue));
+  color: var(--color-white);
+  letter-spacing: 0.2em;
+}
+
 .App {
   text-align: center;
-  background-color: rgba(14, 24, 24, 0.500);
+  font-family: 'Girassol', cursive;
 }
 
 nav {
@@ -8,9 +27,18 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: rgb(73, 79, 82);
-  color: white;
+  background: var(--color-midblue);
+  color: var(--color-white);
 }
+
+  nav img {
+    height: 150px;
+    margin: 1em;
+  }
+
+  nav img:hover {
+    animation: 2s infinite alternate rockin;
+  }
 
 .nav-links {
   width: 50%;
@@ -20,6 +48,96 @@ nav {
   list-style: none;
 }
 
-.nav-links li {
-  color: aliceblue;
+  .nav-links li {
+    color: aliceblue;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 3em;
+    text-shadow: 2px 2px #ff0000;
+  }
+
+  .nav-links li:hover {
+    scale: 1.1;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+  }
+
+.fetchedContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 0.5em;
+}
+
+.fetchedList {
+  position: relative;
+}
+
+.fetchedList:hover {
+  scale: 1.3;
+}
+
+.fetchedList .mainPic {
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+  border: 0.1em solid var(--color-blue);
+  box-shadow: 3px 6px var(--color-purple);
+}
+
+  .fetchedList .mainPic:hover {
+    border: 0.2em solid var(--color-white);
+    /* z-index: 100; */
+    box-shadow: none;
+  }
+
+.fetchedList h3 {
+  max-width: 250px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px var(--color-darkblue);
+}
+
+  .fetchedList .listname {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 0.825em;
+  }
+
+  .fetchedList h3 span {
+    display: none;
+  }
+
+.fetchedList .missionPic {
+  position: absolute;
+  top: 110px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  border: 1px dashed var(--color-white);
+  border-radius: 50%;
+  font-family: 'Courier New', Courier, monospace;
+  color: transparent;
+}
+
+/* ANIMATION */
+
+@keyframes rockin {
+  from {
+    scale: 1;
+  }
+  
+  50% {
+    transform: rotate(20deg);
+    scale: 1.2;
+  }
+
+  to {
+    transform: rotate(-20deg);
+    scale: 1;
+  }
 }

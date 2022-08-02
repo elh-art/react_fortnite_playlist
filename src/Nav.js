@@ -4,13 +4,16 @@ import { Link } from 'react-router-dom'
 function Nav() {
   return (
     <nav>
-      <h1>Logo</h1>
+      <img src={require('./fortnite-logo-vector.png')} alt="Fortnite Logo" />
       <ul className="nav-links">
+        <Link to="/">
+          <li>Home</li>
+        </Link>
         <Link to="/about">
           <li>About</li>
         </Link>
         <Link to="/mainlist">
-          <li>Main list</li>
+          <li>Playlists</li>
         </Link>
       </ul>
     </nav>
