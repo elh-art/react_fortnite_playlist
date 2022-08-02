@@ -32,13 +32,13 @@ function Mainlist() {
         </Link>
           <img className='missionPic' src={list.images.missionIcon} alt={list.name} />
           <h3 className='listname'>{list.name}</h3>
-          <h3>
+          <h3 className='gametype'>
             {reactStringReplace(list.gameType, 'EFortGameType::', (match, i) => (
             <span>{match}</span>
             ))}
           </h3>
-          <h3>{list.ratingType}</h3>
-          <h3>Max Players: {list.maxPlayers}</h3>
+          <h3 className='rating'>{list.ratingType}</h3>
+          <h3 className='players'>Max Players: {list.maxPlayers}</h3>
        </div> )}
     </div>
   )
