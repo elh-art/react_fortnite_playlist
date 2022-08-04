@@ -12,7 +12,6 @@ function Mainlist() {
     fetchData()
   },[])
 
-  
   const fetchData = async() => {
     const resp = await fetch('https://fortnite-api.com/v1/playlists')
     const data = await resp.json()
@@ -20,25 +19,22 @@ function Mainlist() {
     setPlaylists(data.data.filter(withPic => withPic.images.showcase != null))
   }
 
-  
   return (
     <div className='fetchedContainer'>
       {playlists.map(list => 
-
-
        <div className='fetchedList' key={uuidv4()}>
         <Link to={`/mainlist/${list.id}`}>
           <img className='mainPic' src={list.images.showcase} alt={list.name} />
-        </Link>
           <img className='missionPic' src={list.images.missionIcon} alt={list.name} />
           <h3 className='listname'>{list.name}</h3>
           <h3 className='gametype'>
             {reactStringReplace(list.gameType, 'EFortGameType::', (match, i) => (
-            <span>{match}</span>
-            ))}
+              <span>{match}</span>
+              ))}
           </h3>
           <h3 className='rating'>{list.ratingType}</h3>
           <h3 className='players'>Max Players: {list.maxPlayers}</h3>
+        </Link>
        </div> )}
     </div>
   )
