@@ -150,6 +150,7 @@ nav img {
   flex-direction: column;
   align-items: center;
   margin: 0 8em 0 8em;
+  height: 100vh;
   text-shadow: 2px 2px 3px var(--color-darkblue);
   text-transform: uppercase;
 }
@@ -286,5 +287,90 @@ nav img {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* MOBILE READY */
+
+@media screen and (max-width: 870px) {
+
+    nav {
+      min-width: 320px;
+    }
+
+    nav img {
+      height: 100px;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0;
+    }
+    
+    .nav-links li {
+      font-size: 2em;
+    }
+
+    .about-container {
+      font-size: 0.75em;
+      margin: 0 10px;
+    }
+
+    .about-container img {
+      width: 100%;
+      margin: 25px 10px;
+    }
+
+    .fourCharacters {
+      max-width: 425.733px;
+    }
+
+    .detailedList {
+      margin: 0 25px;
+    }
+
+    .detailedList .detailedPic {
+      width: 100%;
+    }
+
+    .detailedContainer .subname {
+      left: 300px;
+      bottom: 140px;
+    }
+
+    .detailedContainer .listname {
+      font-size: 2.25em;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+  .detailedContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detailedContainer .listname {
+    position: relative;
+    top: unset;
+    left: unset;
+    font-size: 2em;
+  }
+
+  .detailedContainer .subname,
+  .detailedContainer .gametype,
+  .detailedContainer .rating,
+  .detailedContainer .players,
+  .detailedContainer .maxteams,
+  .detailedContainer .maxsquad {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 1.2em;
+  }
+
+  .detailedList .description {
+    font-size: 1.35em;
   }
 }
