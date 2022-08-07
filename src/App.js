@@ -1,6 +1,6 @@
 import Nav from './Nav'
-import About from './About'
 import Home from './Home'
+import About from './About'
 import Mainlist from './Mainlist'
 import Playlist from './PlaylistDetails'
 import './App.css'
@@ -23,4 +23,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

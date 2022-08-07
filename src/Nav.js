@@ -1,5 +1,5 @@
-import './App.css'
 import { Link } from 'react-router-dom'
+import './App.css'
 
 function Nav() {
   return (
@@ -20,4 +20,4 @@ function Nav() {
   )
 }
 
-export default Nav;
+export default Nav
