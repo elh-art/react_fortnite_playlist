@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+![fortnite1_small](https://user-images.githubusercontent.com/48730665/184224161-70c3b873-9412-4022-a560-89ff199dbe9a.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Fortnite Playlist app
+>  This project is a small single-page React Router v6 application. I wrote it to practice this React library.   
 
-## Available Scripts
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-In the project directory, you can run:
 
-### `npm start`
+## General Information
+- The application fetches data from Fortnite free API.
+- My root layout is the Nav bar which is always rendered in the DOM.
+- Otherwise, the app shows the rest of the page based on the URL path changes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
+- React
+- React Router V6
+- React Hooks (useEffect; useState)
+- Rest API
+- npm packages: uuid V4; React String Replace
+- CSS
+- Responsive design
+- Site published on: GitHub Pages
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- Fortnite has four distinct game-modes: Save the World, Battle Royale, Zero Build, and Creative. You can get detailed information about them under Playlists link.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![FortniteX](https://user-images.githubusercontent.com/48730665/184225681-57ba650c-524e-4547-812e-7c7e92990adb.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Responsiveness:
 
-### `npm run eject`
+![fortnite2_small](https://user-images.githubusercontent.com/48730665/184225963-46170281-fe3a-4f63-a5f9-d475a62da29b.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Setup
+To access the site click [here](https://elh-art.github.io/react_fortnite_playlist/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Status
+Project is:  _complete_
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Room for Improvement
+- To speed up first load pictures should be downsized before fetch.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgements
+- This project was inspired by Dev Ed's React Router youtube video.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contact
+Created by [@elh-art](https://www.mazsi.net/) - feel free to contact me!
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
