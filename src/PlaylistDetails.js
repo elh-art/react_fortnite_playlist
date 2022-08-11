@@ -25,10 +25,11 @@ const fetchPlaylist = async() => {
       <div className='detailedContainer' key={uuidv4()}>
   {/* THE NEXT TWO ROWS OF CODE IS A WORKAROUND. {playlist.images.showcase} & {playlist.images.missionIcon} THROW AN ERROR. IF YOU KNOW WHY PLS LET ME KNOW! */}
         <img className='detailedPic' key={uuidv4()}
-            src={`https://fortnite-api.com/images/playlists/${id}/showcase.png`} 
+            src={`https://fortnite-api.com/images/playlists/${id}/showcase.png`}
             alt={playlist.name} />
         <img className='missionPic' key={uuidv4()}
-            src={`https://fortnite-api.com/images/playlists/${id}/missionicon.png`} 
+            src={`https://fortnite-api.com/images/playlists/${id}/missionicon.png`}
+            onError={e => { e.currentTarget.src=require('./handtinytrans.gif')}}
             alt={playlist.maxTeamSize} />
         <h1 className='listname' key={uuidv4()}>{playlist.name}
         </h1>

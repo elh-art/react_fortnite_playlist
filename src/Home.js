@@ -11,7 +11,7 @@ function Home() {
         Fortnite has four distinct <Link to="/mainlist">game-modes</Link>: Save the World, Battle Royale, Zero Build, and Creative. You can get detailed information about them under <Link to="/mainlist">Playlists</Link>.  
       </h1>
       <img src={require('./Fortnite-Gamemods.jpg')} 
-          alt="Fortnite website picture" />
+          alt="Fortnite website" />
     </div>
   )
 }

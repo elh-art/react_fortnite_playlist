@@ -14,6 +14,7 @@ function App() {
         <Nav />
           <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/react_fortnite_playlist" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/mainlist" element={<Mainlist />} />
               <Route path="/mainlist/:id" element={<Playlist />} />

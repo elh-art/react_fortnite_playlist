@@ -9,11 +9,11 @@
   --color-purple: #9d4dbb;
   --color-yellow: #f3af19;
   --color-grey: #adadad;
+  
+  background: linear-gradient(180deg, rgba(76,81,247,1) 0%, rgba(38,180,230,1) 35%, rgba(0,0,116,1) 100%);
 }
 
 body {
-  background: rgb(76,81,247);
-  background: linear-gradient(180deg, rgba(76,81,247,1) 0%, rgba(38,180,230,1) 35%, rgba(0,0,116,1) 100%);
   color: var(--color-white);
   letter-spacing: 0.1em;
 }
@@ -73,6 +73,7 @@ nav img {
   gap: 2em;
   margin: 2em 2em 22em 2em;
   text-transform: uppercase;
+  min-height: 100vh;
 }
 
 .fetchedList {
@@ -150,7 +151,6 @@ nav img {
   flex-direction: column;
   align-items: center;
   margin: 0 8em 0 8em;
-  height: 100vh;
   text-shadow: 2px 2px 3px var(--color-darkblue);
   text-transform: uppercase;
 }
