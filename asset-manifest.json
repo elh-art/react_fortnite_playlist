@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react_fortnite_playlist/static/css/main.7ba4f1b5.css",
+    "main.js": "/react_fortnite_playlist/static/js/main.99d374a7.js",
+    "static/js/787.14051d21.chunk.js": "/react_fortnite_playlist/static/js/787.14051d21.chunk.js",
+    "static/media/fortnite_203516.png": "/react_fortnite_playlist/static/media/fortnite_203516.dca926f75804438a1e3e.png",
+    "static/media/Fortnite-Gamemods.jpg": "/react_fortnite_playlist/static/media/Fortnite-Gamemods.c621d1b85f0d94c9187f.jpg",
+    "static/media/fortnite-logo-vector.png": "/react_fortnite_playlist/static/media/fortnite-logo-vector.3e727794d21d85477efb.png",
+    "index.html": "/react_fortnite_playlist/index.html",
+    "main.7ba4f1b5.css.map": "/react_fortnite_playlist/static/css/main.7ba4f1b5.css.map",
+    "main.99d374a7.js.map": "/react_fortnite_playlist/static/js/main.99d374a7.js.map",
+    "787.14051d21.chunk.js.map": "/react_fortnite_playlist/static/js/787.14051d21.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ba4f1b5.css",
+    "static/js/main.99d374a7.js"
+  ]
+}
