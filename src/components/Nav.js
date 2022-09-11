@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import './App.css'
+import '../App.css'
 
 function Nav() {
   return (
     <nav>
-      <img src={require('./fortnite-logo-vector.png')} alt="Fortnite Logo" />
+      <img src={require('../assets/fortnite-logo-vector.png')} alt="Fortnite Logo" />
       <ul className="nav-links">
         <Link to="/">
           <li>Home</li>

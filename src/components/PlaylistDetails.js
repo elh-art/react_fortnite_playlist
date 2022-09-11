@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import {useParams} from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'
 import reactStringReplace from 'react-string-replace';
-import './App.css'
+import '../App.css'
 
 function Playlist() {
 
@@ -29,7 +29,7 @@ const fetchPlaylist = async() => {
             alt={playlist.name} />
         <img className='missionPic' key={uuidv4()}
             src={`https://fortnite-api.com/images/playlists/${id}/missionicon.png`}
-            onError={e => { e.currentTarget.src=require('./handtinytrans.gif')}}
+            onError={e => { e.currentTarget.src=require('../assets/handtinytrans.gif')}}
             alt={playlist.maxTeamSize} />
         <h1 className='listname' key={uuidv4()}>{playlist.name}
         </h1>

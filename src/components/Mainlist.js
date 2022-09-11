@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { v4 as uuidv4 } from 'uuid'
 import reactStringReplace from 'react-string-replace'
  
-import './App.css'
+import '../App.css'
 
 function Mainlist() {
 
@@ -29,7 +29,7 @@ function Mainlist() {
               src={list.images.showcase} 
               alt={list.name} />
           <img className='missionPic' key={uuidv4()}
-              src={list.images.missionIcon !== null ? list.images.missionIcon : require('./handtinytrans.gif')} 
+              src={list.images.missionIcon !== null ? list.images.missionIcon : require('../assets/handtinytrans.gif')} 
               alt={list.name} />
           <h3 className='listname' key={uuidv4()}>{list.name}
           </h3>

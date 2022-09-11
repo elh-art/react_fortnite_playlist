@@ -1,8 +1,8 @@
-import Nav from './Nav'
-import Home from './Home'
-import About from './About'
-import Mainlist from './Mainlist'
-import Playlist from './PlaylistDetails'
+import Nav from './components/Nav'
+import Home from './components/Home'
+import About from './components/About'
+import Mainlist from './components/Mainlist'
+import Playlist from './components/PlaylistDetails'
 import './App.css'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
