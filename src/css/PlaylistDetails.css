@@ -1,0 +1,131 @@
+.detailedList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 8em 0 8em;
+  text-shadow: 2px 2px 3px var(--color-darkblue);
+  text-transform: uppercase;
+}
+
+.detailedContainer {
+  position: relative;
+  margin-top: 25px;
+}
+
+.detailedList .detailedPic {
+    max-width: 780px;
+    border: 0.1em solid var(--color-blue);
+    box-shadow: 10px 0 20px var(--color-purple);
+  }
+
+  .detailedList .missionPic {
+    width: 40px;
+    height: 40px;
+  }
+
+  .detailedList .listname {
+    margin: 0;
+    top: 25px;
+    left: 25px;
+    font-size: 3.5em;
+  }
+
+  .detailedList .subname {
+    position: absolute;
+    bottom: 175px;
+    margin: 0;
+    left: 25px;
+    font-size: 2em;
+  }
+
+  .detailedList h3 {
+    margin: 0;
+    left: 25px;
+    font-size: 1.5em;
+  }
+
+  .detailedList h3 span {
+    color: var(--color-grey);
+  }
+
+  .detailedList .rating {
+    bottom: 25px;
+  }
+  
+  .detailedList .players {
+    bottom: 55px;
+  }
+
+  .detailedList .gametype {
+    bottom: 85px;
+  }
+
+  .detailedList .maxsquad {
+    position: absolute;
+    left: 25px;
+    bottom: 115px;
+  }
+
+  .detailedList .maxteams {
+    position: absolute;
+    left: 25px;
+    bottom: 145px;
+  }
+
+  .detailedList .description {
+    margin-top: 20px;
+    padding-bottom: 333px;
+    max-width: 780px;
+    text-align: justify;
+  }
+
+/* MOBILE READY */
+
+@media screen and (max-width: 870px) {
+  .detailedList {
+    margin: 0 25px;
+  }
+
+  .detailedList .detailedPic {
+    width: 100%;
+  }
+
+  .detailedContainer .subname {
+    left: 300px;
+    bottom: 140px;
+  }
+
+  .detailedContainer .listname {
+    font-size: 2.25em;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .detailedContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detailedContainer .listname {
+    position: relative;
+    top: unset;
+    left: unset;
+    font-size: 2em;
+  }
+
+  .detailedContainer .subname,
+  .detailedContainer .gametype,
+  .detailedContainer .rating,
+  .detailedContainer .players,
+  .detailedContainer .maxteams,
+  .detailedContainer .maxsquad {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 1.2em;
+  }
+
+  .detailedList .description {
+    font-size: 1.35em;
+  }
+}

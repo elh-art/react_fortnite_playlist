@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { v4 as uuidv4 } from 'uuid'
 import reactStringReplace from 'react-string-replace'
  
-import '../App.css'
+import '../css/Mainlist.css'
 
 function Mainlist() {
 
