@@ -1,20 +1,27 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import '../css/Nav.css'
 
 function Nav() {
+
   return (
     <nav>
       <img src={require('../assets/fortnite-logo-vector.png')} alt="Fortnite Logo" />
       <ul className="nav-links">
-        <Link to="/">
+        <NavLink style={({ isActive }) => {
+          return isActive ? {borderBottom:"2px solid purple"} : {}
+          }} to="/">
           <li>Home</li>
-        </Link>
-        <Link to="/about">
+        </NavLink>
+        <NavLink style={({ isActive }) => {
+          return isActive ? {borderBottom:"2px solid purple"} : {}
+          }} to="/about">
           <li>About</li>
-        </Link>
-        <Link to="/mainlist">
+        </NavLink>
+        <NavLink style={({ isActive }) => {
+          return isActive ? {borderBottom:"2px solid purple"} : {}
+          }} to="/mainlist">
           <li>Playlists</li>
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   )
