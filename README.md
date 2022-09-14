@@ -1,3 +1,4 @@
+To access the site click [here](https://elh-art.github.io/react_fortnite_playlist/).
 ![fortnite1_small](https://user-images.githubusercontent.com/48730665/184224161-70c3b873-9412-4022-a560-89ff199dbe9a.gif)
 
 # Fortnite Playlist app
